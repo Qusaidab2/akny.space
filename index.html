@@ -1,285 +1,212 @@
-<!-- index.html (Ukrainian, advanced) -->
+<!-- index.html -->
 <!doctype html>
 <html lang="uk">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AKNY.space — Невидимі нарощення волосся • Львів</title>
-  <meta name="description" content="AKNY.space — холодне нарощення з невидимими капсулами у Львові. Натуральний результат, дбайливий догляд." />
+  <title>AKNY Beauty Center — Невидиме нарощування волосся • Львів</title>
+  <meta name="description" content="AKNY Beauty Center у Львові — салон краси преміум-класу. Невидиме холодне нарощування волосся, доглядові процедури, макіяж, стиль." />
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip" href="#main">Перейти до контенту</a>
-
-  <header class="nav" id="top">
-    <div class="wrap nav-inner">
-      <a class="brand" href="#">AKNY.space</a>
+  <!-- Навігація -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">AKNY Beauty Center</a>
 
       <nav class="nav-links" aria-label="Головна навігація">
         <a href="#services">Послуги</a>
-        <a href="#gallery">Портфоліо</a>
-        <a href="#reviews">Відгуки</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#team">Команда</a>
+        <a href="#testimonials">Відгуки</a>
         <a href="#contact">Контакти</a>
+        <a class="btn-outline" href="#booking">Записатися</a>
       </nav>
 
-      <div class="actions">
-        <a class="btn-outline" href="https://www.instagram.com/akny.space/" target="_blank" rel="noopener">Instagram</a>
-        <button id="bookNow" class="btn">Записатися</button>
-        <button class="nav-toggle" aria-label="Відкрити меню">☰</button>
-      </div>
+      <button class="nav-toggle" aria-label="Меню">☰</button>
     </div>
   </header>
 
-  <main id="main">
-    <!-- HERO -->
-    <section class="hero" style="--hero:url('assets/hero.jpg')">
-      <div class="overlay"></div>
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <h1>Невидимі нарощення волосся у Львові</h1>
-          <p class="lead">Холодна методика з невидимими капсулами. Легко. Натурально. Довговічно.</p>
+  <main>
+    <!-- Hero -->
+    <section class="hero" style="--hero-image:url('assets/hero-salon.jpg')">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Салон краси преміум у Львові</h1>
+          <p class="lead">Невидиме нарощування волосся, доглядові ритуали, макіяж та стиль — усе для вашої досконалості.</p>
 
           <div class="hero-cta">
-            <button id="heroBook" class="btn btn-lg">Безкоштовна консультація</button>
-            <a class="link-muted" href="#gallery">Переглянути роботи</a>
+            <a class="btn" href="#booking">Записатися онлайн</a>
+            <a class="btn-ghost" href="#gallery">Переглянути роботи</a>
           </div>
 
-          <ul class="infoline">
+          <ul class="quick-info">
             <li>📍 Львів</li>
-            <li>⌚ Вт-Сб 10:00 — 20:00</li>
-            <li>📞 <a href="tel:+380681617511">+380 68 161 75 11</a></li>
+            <li>🕘 Вт–Сб • 10:00–20:00</li>
+            <li>📞 +380 68 161 75 11</li>
           </ul>
         </div>
 
-        <div class="hero-media">
-          <div class="card-glass">
-            <picture>
-              <source srcset="assets/hero-side.webp" type="image/webp">
-              <img src="assets/hero-side.jpg" alt="Приклад робіт — перед та після">
-            </picture>
-
-            <div class="card-body">
-              <strong>Персональна підбірка</strong>
-              <p>Підбираємо колір, довжину і щільність індивідуально. Результат, який не помітно нічим іншим.</p>
-              <div class="card-actions">
-                <button class="btn-small" id="consult">Замовити консультацію</button>
-                <a class="btn-ghost" href="https://wa.me/380681617511" target="_blank" rel="noopener">WhatsApp</a>
-              </div>
-            </div>
+        <div class="hero-card">
+          <div class="card-img" aria-hidden="true">
+            <img src="assets/hero-side-salon.jpg" alt="Салон AKNY Beauty Center">
+          </div>
+          <div class="card-body">
+            <strong>Індивідуальна консультація</strong>
+            <p>Ми створюємо образ, який підкреслить вашу природну красу. Запишіться на безкоштовну консультацію вже сьогодні.</p>
+            <a class="btn-small" href="#booking">Записатися</a>
           </div>
         </div>
       </div>
-
-      <div class="wave" aria-hidden="true"></div>
     </section>
 
-    <!-- FEATURES -->
-    <section class="wrap features-grid" aria-labelledby="why">
-      <h2 id="why" class="section-title">Чому AKNY.space</h2>
-      <div class="features">
-        <article>
-          <h3>Невидимі капсули</h3>
-          <p>Дрібні, акуратні капсули, які не помітні в волоссі і не обтяжують.</p>
-        </article>
-        <article>
-          <h3>Лагідна методика</h3>
-          <p>Холодне нарощення зберігає структуру природного волосся і його здоров'я.</p>
-        </article>
-        <article>
-          <h3>Преміум волосся</h3>
-          <p>Ми працюємо з європейськими пасмами високої якості для натурального блиску і текстури.</p>
-        </article>
+    <!-- About -->
+    <section id="about" class="container about">
+      <div class="about-grid">
+        <div>
+          <h2>Про салон</h2>
+          <p>AKNY Beauty Center — це сучасний простір краси, де поєднані найновіші техніки та естетика світового рівня. Ми спеціалізуємося на невидимому нарощуванні волосся, професійному макіяжі та комплексному догляді.
+          </p>
+
+          <ul class="features">
+            <li>✨ Невидимі капсули для натурального вигляду</li>
+            <li>✨ Європейське волосся найвищої якості</li>
+            <li>✨ Авторські методики та сертифіковані майстри</li>
+          </ul>
+        </div>
+
+        <div class="about-media">
+          <img src="assets/about-beauty.jpg" alt="Стиліст у роботі">
+        </div>
       </div>
     </section>
 
-    <!-- SERVICES -->
-    <section id="services" class="wrap services" aria-labelledby="servicesTitle">
-      <h2 id="servicesTitle" class="section-title">Послуги та орієнтовні ціни</h2>
+    <!-- Services -->
+    <section id="services" class="container services">
+      <h2>Наші послуги</h2>
       <div class="services-grid">
-        <div class="service-card">
-          <h3>Нарощення невидимими капсулами</h3>
-          <p>Повне нарощення для довжини або щільності. Ідеально для природного вигляду.</p>
-          <div class="price">від <strong>1500 ₴</strong></div>
-        </div>
+        <article class="service">
+          <h3>Невидиме нарощування</h3>
+          <p>Холодне нарощування волосся з невидимими капсулами для об’єму та довжини.</p>
+          <div class="price">Від <strong>1500 ₴</strong></div>
+        </article>
 
-        <div class="service-card">
-          <h3>Корекція</h3>
-          <p>Професійне підтягування і корекція капсул для продовження терміну служби.</p>
-          <div class="price">від <strong>600 ₴</strong></div>
-        </div>
+        <article class="service">
+          <h3>Догляд за волоссям</h3>
+          <p>SPA-ритуали та професійні процедури для відновлення і сяйва.</p>
+          <div class="price">Від <strong>700 ₴</strong></div>
+        </article>
 
-        <div class="service-card">
-          <h3>Зняття та догляд</h3>
-          <p>Акуратне зняття і відновлювальна процедура для волосся.</p>
-          <div class="price">від <strong>400 ₴</strong></div>
-        </div>
-      </div>
-      <p class="note">Ціни орієнтовні. Точна вартість залежить від довжини та щільності волосся. Для точного розрахунку — консультація.</p>
-    </section>
+        <article class="service">
+          <h3>Макіяж & стиль</h3>
+          <p>Денний, вечірній та весільний макіяж від наших візажистів.</p>
+          <div class="price">Від <strong>600 ₴</strong></div>
+        </article>
 
-    <!-- GALLERY -->
-    <section id="gallery" class="wrap gallery" aria-labelledby="galleryTitle">
-      <h2 id="galleryTitle" class="section-title">Портфоліо — перед і після</h2>
-      <p class="muted">Натисніть на фото, щоб збільшити. Для свіжих робіт переходьте в Instagram.</p>
-
-      <div class="masonry" id="masonry">
-        <!-- Замініть реальними файлами assets/gallery-1.jpg ... -->
-        <button class="m-item"><img src="assets/gallery-1.jpg" alt="Портфоліо 1"></button>
-        <button class="m-item"><img src="assets/gallery-2.jpg" alt="Портфоліо 2"></button>
-        <button class="m-item"><img src="assets/gallery-3.jpg" alt="Портфоліо 3"></button>
-        <button class="m-item"><img src="assets/gallery-4.jpg" alt="Портфоліо 4"></button>
-        <button class="m-item"><img src="assets/gallery-5.jpg" alt="Портфоліо 5"></button>
-        <button class="m-item"><img src="assets/gallery-6.jpg" alt="Портфоліо 6"></button>
-      </div>
-
-      <div class="instagram-cta">
-        <a href="https://www.instagram.com/akny.space/" target="_blank" rel="noopener">Перейти в Instagram</a>
+        <article class="service">
+          <h3>Манікюр & педикюр</h3>
+          <p>Сучасні дизайни, догляд та релакс для ваших рук і ніг.</p>
+          <div class="price">Від <strong>500 ₴</strong></div>
+        </article>
       </div>
     </section>
 
-    <!-- REVIEWS -->
-    <section id="reviews" class="wrap reviews" aria-labelledby="reviewsTitle">
-      <h2 id="reviewsTitle" class="section-title">Відгуки клієнтів</h2>
-      <div class="reviews-grid">
-        <figure class="review">
-          <blockquote>"Мене не впізнала мама — волосся виглядає як моє. Дякую!"</blockquote>
-          <figcaption>— Олена, Львів</figcaption>
-        </figure>
+    <!-- Gallery -->
+    <section id="gallery" class="container gallery">
+      <h2>Галерея робіт</h2>
+      <p class="muted">Перегляньте наші трансформації та натхніться для свого нового образу.</p>
 
-        <figure class="review">
-          <blockquote>"Капсули невидимі, не відчуваються. Стилістка все зробила дуже ніжно."</blockquote>
-          <figcaption>— Марія, Львів</figcaption>
-        </figure>
+      <div class="gallery-grid">
+        <button class="gallery-item"><img src="assets/gallery-1.jpg" alt="Робота 1"></button>
+        <button class="gallery-item"><img src="assets/gallery-2.jpg" alt="Робота 2"></button>
+        <button class="gallery-item"><img src="assets/gallery-3.jpg" alt="Робота 3"></button>
+        <button class="gallery-item"><img src="assets/gallery-4.jpg" alt="Робота 4"></button>
+        <button class="gallery-item"><img src="assets/gallery-5.jpg" alt="Робота 5"></button>
+        <button class="gallery-item"><img src="assets/gallery-6.jpg" alt="Робота 6"></button>
       </div>
     </section>
 
-    <!-- CONTACT / BOOKING -->
-    <section id="contact" class="wrap contact" aria-labelledby="contactTitle">
-      <h2 id="contactTitle" class="section-title">Контакти та запис</h2>
+    <!-- Team -->
+    <section id="team" class="container team">
+      <h2>Наша команда</h2>
+      <div class="team-grid">
+        <article class="team-member">
+          <img src="assets/team-1.jpg" alt="Майстер Анна">
+          <h3>Анна</h3>
+          <p>Експерт з нарощування волосся</p>
+        </article>
+        <article class="team-member">
+          <img src="assets/team-2.jpg" alt="Візажист Марія">
+          <h3>Марія</h3>
+          <p>Візажист & стиліст</p>
+        </article>
+        <article class="team-member">
+          <img src="assets/team-3.jpg" alt="Майстер Олена">
+          <h3>Олена</h3>
+          <p>Майстер манікюру</p>
+        </article>
+      </div>
+    </section>
 
+    <!-- Testimonials -->
+    <section id="testimonials" class="container testimonials">
+      <h2>Відгуки клієнтів</h2>
+      <div class="testimonials-grid">
+        <blockquote>
+          <p>"Справжній салон краси! Атмосфера, сервіс і результат — ідеально."</p>
+          <cite>— Катерина</cite>
+        </blockquote>
+
+        <blockquote>
+          <p>"Невидимі капсули дійсно не відчуваються. Моє волосся виглядає бездоганно!"</p>
+          <cite>— Софія</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section id="contact" class="container contact">
+      <h2 id="booking">Запис онлайн</h2>
       <div class="contact-grid">
-        <form id="bookingForm" class="form" autocomplete="off">
-          <div class="row">
-            <label>Імʼя
-              <input type="text" name="name" required>
-            </label>
-            <label>Телефон
-              <input type="tel" name="phone" placeholder="+380..." required>
-            </label>
-          </div>
-
-          <label>Послуга
-            <select name="service">
-              <option>Нарощення невидимими капсулами — повне</option>
-              <option>Корекція</option>
-              <option>Зняття та догляд</option>
-              <option>Консультація</option>
-            </select>
-          </label>
-
-          <label>Бажана дата і час
-            <input type="datetime-local" name="datetime">
-          </label>
-
-          <label>Коментар
-            <textarea name="message" rows="3"></textarea>
-          </label>
-
+        <form id="bookingForm" class="form">
+          <label>Ваше ім’я<input type="text" required></label>
+          <label>Телефон<input type="tel" placeholder="+380..." required></label>
+          <label>Послуга<select><option>Невидиме нарощування</option><option>Догляд</option><option>Макіяж</option><option>Манікюр</option></select></label>
+          <label>Дата та час<input type="datetime-local"></label>
+          <label>Коментар<textarea rows="3"></textarea></label>
           <div class="form-actions">
-            <button class="btn" type="submit">Надіслати запит</button>
-            <a class="btn-ghost" href="https://wa.me/380681617511" target="_blank" rel="noopener">Написати в WhatsApp</a>
+            <button class="btn" type="submit">Надіслати</button>
+            <a class="btn-ghost" href="https://wa.me/380681617511" target="_blank">WhatsApp</a>
           </div>
-
-          <p class="muted small">Ми звяжемося для підтвердження. Для термінових записів — Instagram або WhatsApp.</p>
         </form>
 
-        <aside class="aside">
+        <aside class="contact-aside">
           <div class="card">
             <h3>Контакти</h3>
-            <p>📍 Львів, запис за попереднім записом<br>📞 <a href="tel:+380681617511">+380 68 161 75 11</a><br>📩 Запис у Direct</p>
-
-            <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-hidden="false"></iframe>
-            </div>
-          </div>
-
-          <div class="social-inline">
-            <a class="social-link" href="https://www.instagram.com/akny.space/" target="_blank" rel="noopener">@akny.space</a>
-            <a class="social-link" href="tel:+380681617511">+380 68 161 75 11</a>
+            <p>📍 Львів, студія за попереднім записом<br>📞 +380 68 161 75 11<br>📩 Direct Instagram</p>
           </div>
         </aside>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
-    <div class="wrap footer-inner">
+    <div class="container footer-inner">
       <div>
-        <strong>AKNY.space</strong>
-        <p class="muted">Невидимі нарощення • Львів</p>
+        <strong>AKNY Beauty Center</strong>
+        <p>Ваш простір краси у Львові</p>
       </div>
-      <div class="footer-actions">
-        <a class="btn-ghost" href="#top">Піднятись вгору</a>
-        <a href="https://www.instagram.com/akny.space/" target="_blank" rel="noopener">Instagram</a>
+      <div class="footer-contacts">
+        <a href="tel:+380681617511">+380 68 161 75 11</a>
+        <a href="https://www.instagram.com/akny.space/" target="_blank">@akny.space</a>
       </div>
     </div>
   </footer>
-
-  <!-- BOOKING MODAL -->
-  <div id="modal" class="modal" aria-hidden="true">
-    <div class="modal-inner" role="dialog" aria-modal="true">
-      <button class="modal-close" aria-label="Закрити">✕</button>
-      <h3>Швидкий запис</h3>
-      <p class="muted">Залиште імʼя та телефон, і ми звяжемося для підтвердження</p>
-      <form id="modalForm" class="modal-form">
-        <label>Імʼя<input name="mname" required></label>
-        <label>Телефон<input name="mphone" required></label>
-        <div class="modal-actions">
-          <button class="btn" type="submit">Відправити</button>
-          <a class="btn-ghost" href="https://wa.me/380681617511" target="_blank" rel="noopener">WhatsApp</a>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <script>
-    // Mobile nav
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    navToggle?.addEventListener('click', () => navLinks.classList.toggle('open'));
-
-    // Modal booking
-    const modal = document.getElementById('modal');
-    const openBtns = document.querySelectorAll('#bookNow,#heroBook,#consult');
-    const closeBtn = document.querySelector('.modal-close');
-    openBtns.forEach(b => b?.addEventListener('click', () => { modal.style.display = 'flex'; modal.setAttribute('aria-hidden','false'); document.body.classList.add('no-scroll'); }));
-    closeBtn?.addEventListener('click', () => { modal.style.display = 'none'; modal.setAttribute('aria-hidden','true'); document.body.classList.remove('no-scroll'); });
-    modal?.addEventListener('click', e => { if (e.target === modal) { modal.style.display = 'none'; modal.setAttribute('aria-hidden','true'); document.body.classList.remove('no-scroll'); } });
-
-    // Simple gallery lightbox
-    const masonry = document.getElementById('masonry');
-    const createLB = (src, alt) => {
-      const lb = document.createElement('div'); lb.className = 'lightbox';
-      lb.innerHTML = `<div class="lightbox-inner"><img src="${src}" alt="${alt}"><button class="close">✕</button></div>`;
-      lb.addEventListener('click', e => { if (e.target === lb || e.target.classList.contains('close')) lb.remove(); });
-      document.body.appendChild(lb);
-    }
-    document.querySelectorAll('.m-item').forEach(btn => btn.addEventListener('click', () => { const img = btn.querySelector('img'); createLB(img.src, img.alt); }));
-
-    // Form handlers (placeholder)
-    document.getElementById('bookingForm')?.addEventListener('submit', e => { e.preventDefault(); alert('Дякуємо! Ми звяжемося найближчим часом.'); e.target.reset(); });
-    document.getElementById('modalForm')?.addEventListener('submit', e => { e.preventDefault(); alert('Запит на запис відправлено'); e.target.reset(); modal.style.display='none'; document.body.classList.remove('no-scroll'); });
-
-    // Prefers reduced motion
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.documentElement.classList.add('reduce-motion');
-    }
-  </script>
 </body>
 </html>
 
